@@ -1,0 +1,157 @@
+html, body {
+    margin: 0;
+    padding: 10;
+}
+.container{
+  margin: 0 auto;  
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  align-items: center;
+ 
+}
+.grid {
+    zoom: 80%;
+    display: flex;
+    flex-wrap: wrap;
+    width: 420px;
+    height: 420px;
+    border: solid black;
+}
+
+.grid div {
+    width: 15px;
+    height: 15px;
+}
+h3{
+    text-align: center;
+    margin: 0 ;
+}
+#score{
+   
+    color: burlywood;
+}
+.pac-dot {
+    background-color: green;
+    border: 5px solid white;
+    box-sizing: border-box;
+}
+
+.wall {
+    background-image: url(../images/brick.png);
+    background-size: cover;
+}
+
+.power-pellet {
+    background-color: red;
+    border-radius: 7.5px;
+    
+}
+
+.pacman {
+    background-image: url(../images/pacman.png );
+    background-size:cover;
+    background-position: center;
+    border: none;
+    opacity: 0.8;
+}
+
+.container-buttons{
+    margin:0 1em;
+    display:grid;
+    grid-template-columns: 5em 5em;
+    grid-template-rows:  auto;
+    grid-template-areas: 
+    "up up"
+    "left right"
+    "down down"
+    
+    
+    ;
+    justify-items: center;
+}
+#btn-up{
+    grid-area: up;
+    margin-bottom: 0;
+    border: none;
+    border-radius: 50%;
+    opacity: 0.7;
+    background:black;
+    
+}
+#btn-left{
+   grid-area: left;
+   border: none;
+    border-radius: 50%;
+    opacity: 0.7;
+    background:black;
+   
+}
+#btn-right{
+    grid-area: right;
+    border: none;
+    border-radius: 50%;
+    opacity: 0.7;
+    background:black;
+   
+}
+#btn-down{
+    grid-area: down;
+    margin-top: 0;
+    border: none;
+    border-radius: 50%;
+    opacity: 0.7;
+    background:black;
+}
+/* btns */
+.btn{ 
+    padding: 1em;
+    font-size: larger;
+    color:yellow;
+   
+    text-decoration: none;
+}
+
+
+/* ghost */
+
+.blinky{
+    background-image: url(../images/blinky\ .png);
+    background-size:cover;
+    background-position: center;
+    border: none;
+    opacity: 0.8;
+}
+.pinky{
+    background-image: url(../images/pinky.png);
+    background-size:cover;
+    background-position: center;
+    
+    border: none;
+    opacity: 0.8;
+}
+.inky{
+    background-image: url(../images/inky.png);
+    background-size:cover;
+    background-position: center;
+    
+    border: none;
+    opacity: 0.8;
+}
+.clyde{
+    background-image: url(../images/clyde.png);
+    background-size:cover;
+    background-position: center;
+    
+    border: none;
+    opacity: 0.8;
+}
+/* ghost */
+.scared{
+    background-image: url(../images/scared.png);
+    background-size:cover;
+    background-position: center;
+    border: none;
+    opacity: 0.5;
+    
+}
